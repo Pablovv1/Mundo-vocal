@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 | Mundo Vocal</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/top10.css">
+</head>
+<body class="top10-bg">
+    <header class="top10-header">
+        <a href="index.html" class="btn-volver">&larr; Volver</a>
+        <h1>Top 10 Musical</h1>
+    </header>
+    <main class="top10-main">
+        <div id="top10-lista" class="top10-lista"></div>
+        <div id="top10-spinner" style="display:none;text-align:center;margin:2rem 0;"></div>
+    </main>
+    <script src="Js/top10.js"></script>
+    <script>
+    // Delegar click en las tarjetas para ir a la página de detalle
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('top10-lista').addEventListener('click', function(e) {
+            const card = e.target.closest('.top10-card');
+            if (card) {
+                const track = encodeURIComponent(card.getAttribute('data-track'));
+                const artist = encodeURIComponent(card.getAttribute('data-artist'));
+                window.location.href = `cancion.html?track=${track}&artist=${artist}`;
+            }
+        });
+    });
+    </script>
+</body>
+</html> 

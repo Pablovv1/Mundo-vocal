@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias | Mundo Vocal</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/noticias.css">
+</head>
+<body class="noticias-bg">
+    <header class="noticias-header">
+        <a href="index.html" class="btn-volver">&larr; Volver</a>
+        <h1>Noticias musicales</h1>
+    </header>
+    <main class="noticias-main">
+        <div class="buscador-noticias">
+            <input type="text" id="input-buscar-noticia" placeholder="Buscar noticia o artista..." autocomplete="off">
+            <button id="btn-buscar-noticia">Buscar</button>
+        </div>
+        <h2 class="noticias-titulo-seccion">Noticias sobre artistas</h2>
+        <div id="seccion-artistas" class="noticias-lista"></div>
+        <h2 class="noticias-titulo-seccion">Noticias sobre música y tendencias</h2>
+        <div id="seccion-musica" class="noticias-lista"></div>
+        <div id="noticias-spinner" style="display:none;text-align:center;margin:2rem 0;"></div>
+    </main>
+    <script src="Js/noticias.js"></script>
+</body>
+</html> 

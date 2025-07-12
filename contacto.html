@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Mundo Vocal</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/contacto.css">
+</head>
+<body class="contacto-bg">
+    <header class="contacto-header">
+        <a href="index.html" class="btn-volver">&larr; Volver</a>
+        <h1>Contacto</h1>
+    </header>
+    <main class="contacto-main">
+        <div class="contacto-container">
+            <div class="contacto-info">
+                <h2>¡Hablemos de música!</h2>
+                <p>¿Tienes alguna pregunta, sugerencia o quieres colaborar? No dudes en contactarnos.</p>
+                <div class="contacto-detalles">
+                    <div class="contacto-item">
+                        <span class="contacto-icon">📧</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@mundovocal.com</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="contacto-icon">📍</span>
+                        <div>
+                            <h3>Ubicación</h3>
+                            <p>Madrid, España</p>
+                        </div>
+                    </div>
+                    <div class="contacto-item">
+                        <span class="contacto-icon">⏰</span>
+                        <div>
+                            <h3>Horario</h3>
+                            <p>Lun - Vie: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacto-redes">
+                    <h3>Síguenos</h3>
+                    <div class="redes-links">
+                        <a href="#" class="red-social">📱 Instagram</a>
+                        <a href="#" class="red-social">🐦 Twitter</a>
+                        <a href="#" class="red-social">📘 Facebook</a>
+                        <a href="#" class="red-social">📺 YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contacto-formulario">
+                <h2>Envíanos un mensaje</h2>
+                <form id="contacto-form">
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" id="btn-enviar">Enviar mensaje</button>
+                </form>
+                <div id="mensaje-envio" class="mensaje-envio"></div>
+            </div>
+        </div>
+    </main>
+    <script src="Js/contacto.js"></script>
+</body>
+</html> 

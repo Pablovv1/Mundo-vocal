@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Vocal</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-menu">
+            <img src="img/logo.png" alt="Logo Mundo Vocal" class="logo-img">
+            <select id="selector-idioma" aria-label="Seleccionar idioma">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+        <nav class="navbar">
+            <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            <ul class="nav-list">
+                <li><a href="#cantantes">Cantantes</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="top10.html">Top 10</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="cantantes">
+            <h2>Cantantes Destacados</h2>
+            <div class="menu-generos">
+                <div class="generos-principales">
+                    <button class="btn-genero active" data-genero="pop">Pop</button>
+                    <button class="btn-genero" data-genero="rock">Rock</button>
+                    <button class="btn-genero" data-genero="reggaeton">Reggaetón</button>
+                    <button class="btn-genero" data-genero="salsa">Salsa</button>
+                    <button class="btn-genero" data-genero="jazz">Jazz</button>
+                    <button class="btn-genero" data-genero="opera">Ópera</button>
+                </div>
+                <div class="generos-extra" style="display:none;">
+                    <button class="btn-genero" data-genero="rap">Rap</button>
+                    <button class="btn-genero" data-genero="electronic">Electrónica</button>
+                    <button class="btn-genero" data-genero="indie">Indie</button>
+                    <button class="btn-genero" data-genero="metal">Metal</button>
+                    <button class="btn-genero" data-genero="classical">Clásica</button>
+                    <button class="btn-genero" data-genero="blues">Blues</button>
+                    <button class="btn-genero" data-genero="country">Country</button>
+                    <button class="btn-genero" data-genero="punk">Punk</button>
+                    <button class="btn-genero" data-genero="reggae">Reggae</button>
+                    <button class="btn-genero" data-genero="folk">Folk</button>
+                    <button class="btn-genero" data-genero="funk">Funk</button>
+                    <button class="btn-genero" data-genero="disco">Disco</button>
+                    <button class="btn-genero" data-genero="flamenco">Flamenco</button>
+                    <button class="btn-genero" data-genero="trap">Trap</button>
+                    <button class="btn-genero" data-genero="soul">Soul</button>
+                    <button class="btn-genero" data-genero="rnb">R&B</button>
+                    <button class="btn-genero" data-genero="grunge">Grunge</button>
+                    <button class="btn-genero" data-genero="gospel">Gospel</button>
+                    <button class="btn-genero" data-genero="k-pop">K-Pop</button>
+                    <button class="btn-genero" data-genero="jazz fusion">Jazz Fusion</button>
+                    <button class="btn-genero" data-genero="ska">Ska</button>
+                    <button class="btn-genero" data-genero="dance">Dance</button>
+                    <button class="btn-genero" data-genero="house">House</button>
+                    <button class="btn-genero" data-genero="techno">Techno</button>
+                    <button class="btn-genero" data-genero="trance">Trance</button>
+                    <button class="btn-genero" data-genero="dubstep">Dubstep</button>
+                    <button class="btn-genero" data-genero="drum and bass">Drum and Bass</button>
+                    <button class="btn-genero" data-genero="bossa nova">Bossa Nova</button>
+                    <button class="btn-genero" data-genero="bolero">Bolero</button>
+                    <button class="btn-genero" data-genero="tango">Tango</button>
+                    <button class="btn-genero" data-genero="vallenato">Vallenato</button>
+                    <button class="btn-genero" data-genero="cumbia">Cumbia</button>
+                    <button class="btn-genero" data-genero="merengue">Merengue</button>
+                    <button class="btn-genero" data-genero="banda">Banda</button>
+                    <button class="btn-genero" data-genero="norteño">Norteño</button>
+                    <button class="btn-genero" data-genero="ranchera">Ranchera</button>
+                    <button class="btn-genero" data-genero="samba">Samba</button>
+                    <button class="btn-genero" data-genero="pagode">Pagode</button>
+                    <button class="btn-genero" data-genero="forró">Forró</button>
+                    <button class="btn-genero" data-genero="axé">Axé</button>
+                    <button class="btn-genero" data-genero="sertanejo">Sertanejo</button>
+                    <button class="btn-genero" data-genero="mpb">MPB</button>
+                    <button class="btn-genero" data-genero="brega">Brega</button>
+                    <button class="btn-genero" data-genero="zouk">Zouk</button>
+                    <button class="btn-genero" data-genero="chillout">Chillout</button>
+                    <button class="btn-genero" data-genero="ambient">Ambient</button>
+                    <button class="btn-genero" data-genero="new age">New Age</button>
+                    <button class="btn-genero" data-genero="experimental">Experimental</button>
+                    <button class="btn-genero" data-genero="alternative">Alternative</button>
+                    <button class="btn-genero" data-genero="emo">Emo</button>
+                    <button class="btn-genero" data-genero="hardcore">Hardcore</button>
+                    <button class="btn-genero" data-genero="progressive">Progressive</button>
+                    <button class="btn-genero" data-genero="post-rock">Post-Rock</button>
+                    <button class="btn-genero" data-genero="shoegaze">Shoegaze</button>
+                    <button class="btn-genero" data-genero="lo-fi">Lo-fi</button>
+                    <button class="btn-genero" data-genero="swing">Swing</button>
+                    <button class="btn-genero" data-genero="g-funk">G-Funk</button>
+                    <button class="btn-genero" data-genero="drill">Drill</button>
+                    <button class="btn-genero" data-genero="afrobeat">Afrobeat</button>
+                    <button class="btn-genero" data-genero="afropop">Afropop</button>
+                    <button class="btn-genero" data-genero="afrohouse">Afrohouse</button>
+                    <button class="btn-genero" data-genero="afrotrap">Afrotrap</button>
+                    <button class="btn-genero" data-genero="kizomba">Kizomba</button>
+                    <button class="btn-genero" data-genero="bachata">Bachata</button>
+                    <button class="btn-genero" data-genero="soul">Soul</button>
+                    <button class="btn-genero" data-genero="rnb">R&B</button>
+                </div>
+                <button class="btn-ver-mas-generos" id="btn-ver-mas-generos">Ver más géneros</button>
+            </div>
+            <div class="buscador-cantantes">
+                <input type="text" id="input-buscar-cantante" placeholder="Buscar cantante..." autocomplete="off">
+                <button id="btn-buscar-cantante">Buscar</button>
+            </div>
+            <div id="sugerencias-cantantes"></div>
+            <div class="galeria-cantantes"></div>
+            <div id="infinite-spinner" style="display:none;text-align:center;margin:2rem 0;"></div>
+        </section>
+    </main>
+    <script src="Js/script.js"></script>
+    <script>
+    // Menú hamburguesa para móviles
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-list').classList.toggle('open');
+    });
+    </script>
+</body>
+</html>
